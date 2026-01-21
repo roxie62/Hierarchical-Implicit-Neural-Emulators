@@ -13,7 +13,7 @@ import torch,pdb
 from torch.nn.functional import silu
 F = torch.nn.functional
 import torch.nn as nn
-from fourier import SpectralConv2d, SpectralConv2dSteerable
+from util.fourier import SpectralConv2d, SpectralConv2dSteerable
 #----------------------------------------------------------------------------
 # Unified routine for initializing weights and biases.
 

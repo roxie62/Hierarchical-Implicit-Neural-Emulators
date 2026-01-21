@@ -5,7 +5,7 @@ import pdb,tqdm
 from torch.utils.data import DataLoader
 import torch.distributed as dist
 
-from py2d import NSdataset
+from util.py2d import NSdataset
 
 F = torch.nn.functional
 
