@@ -22,7 +22,7 @@ btz=32
 ds_factor=8
 ds_factor_low=32
 img_res=256
-output_dir=output_${num_of_frame}_ds${ds_factor}_${ds_factor_low}
+output_dir=output
 
 torchrun --nnodes=1 --nproc_per_node=4 --master_port=${port} \
   main.py --img_size 256 --batch_size $btz --resume $output_dir \
