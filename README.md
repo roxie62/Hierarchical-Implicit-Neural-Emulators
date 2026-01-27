@@ -14,3 +14,6 @@ To test the model using a single GPU.
 ```
 bash experiments/eval.sh
 ```
+
+https://github.com/user-attachments/assets/05af74ef-9cf2-4965-bfc8-08e697b10a5b
+
