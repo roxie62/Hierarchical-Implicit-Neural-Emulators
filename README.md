@@ -137,10 +137,10 @@ Evaluation rolls the model out autoregressively over the test set and reports me
 
 | Argument | Reference value | Meaning |
 | --- | --- | --- |
-| `--num_of_frame` | `4` | Consecutive frames per training sample. **Must be 4** for the default 3-level hierarchy. |
-| `--ds_factor` | `8` | Spatial downsampling factor for the mid-resolution future summary `z¹` (→ `img_size / ds_factor`). |
-| `--ds_factor_low` | `32` | Spatial downsampling factor for the low-resolution future summary `z²` (→ `img_size / ds_factor_low`). |
-| `--ratio` | `0.85` | Fraction of samples trained on the full autoregressive case vs. the two warm-up cases. |
+| `num_of_frame` | `4` | Consecutive frames per training sample. **Must be 4** for the default 3-level hierarchy. |
+| `ds_factor` | `8` | Spatial downsampling factor for the mid-resolution future summary `z¹` (→ `img_size / ds_factor`). |
+| `ds_factor_low` | `32` | Spatial downsampling factor for the low-resolution future summary `z²` (→ `img_size / ds_factor_low`). |
+| `ratio` | `0.85` | Fraction of samples trained on the full autoregressive case vs. the two warm-up cases. |
 
 Outputs (plots, per-horizon MSE CSVs, checkpoints) are written under `--output_dir`.
 
