@@ -4,7 +4,9 @@ Welcome to our Futurama: (Future-dependent) hierarchical implicit emulators!
 
 This is the official implementation for our NeurIPS 2025 paper: Hierarchical Implicit Neural Emulators (Operators) ([arxiv version](https://arxiv.org/abs/2506.04528)). You can use it directly for modeling 2D PDE dynamics, as we built the architecture based on UNet2d and Fourier convolutions. But the main method is general enough to any autoregressive modeling.
 
-TLDR: Neural PDE solvers are powerful but tend to accumulate error over long rollouts, drifting away from stable, physically consistent trajectories. We introduce a **multiscale implicit neural emulator** that improves long-term accuracy by conditioning each prediction on a hierarchy of lower-dimensional representations of *future* states. Drawing on the stability of implicit time-stepping schemes in classical numerical methods, the model looks several steps ahead at increasing compression rates and uses those coarse forecasts to refine the next-timestep prediction. By actively adjusting the temporal downsampling ratios, it captures dynamics across multiple granularities and enforces long-range temporal coherence.
+TLDR: Neural PDE solvers are powerful but tend to accumulate error over long rollouts, drifting away from stable, physically consistent trajectories. We introduce a **multiscale implicit neural emulator** that improves long-term accuracy by conditioning each prediction on a hierarchy of lower-dimensional representations of *future* states. 
+
+Drawing on the stability of implicit time-stepping schemes in classical numerical methods, the model looks several steps ahead at increasing compression rates and uses those coarse forecasts to refine the next-timestep prediction. By actively adjusting the temporal downsampling ratios, it captures dynamics across multiple granularities and enforces long-range temporal coherence.
 
 ## How it works
 
